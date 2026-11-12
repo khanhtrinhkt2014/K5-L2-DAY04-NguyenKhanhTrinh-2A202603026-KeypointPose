@@ -33,10 +33,10 @@ Rê chuột vào đúng điểm rồi nhấn `Q` để bật/tắt `occluded` ho
 
 | Nhóm ảnh | Số ảnh | Số skeleton đã gán | Số người dưới 60 px (không gán) | Số poster / gương / màn hình bỏ qua | Thời gian (phút) |
 |---|---:|---:|---:|---:|---:|
-| `easy` | 5 | 5 | | | 10 |
+| `easy` | 5 | 7 | | | 10 |
 | `occluded` | 3 | 3 | | | 15 |
 | `back` | 3 | 6 | | | 30 |
-| `small` | 1 | 1 | | | 15 |
+| `small` | 0 | 0 | | | 15 |
 | `crowd` | 1 | 2 | | | 10 |
 | `faces` | 8 | 8 | — | | 10 |
 
