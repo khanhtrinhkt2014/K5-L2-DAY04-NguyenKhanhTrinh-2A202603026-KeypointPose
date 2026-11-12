@@ -64,14 +64,15 @@ Mã lỗi dùng đúng một trong: `lr_swap`, `vis_flag`, `position`, `missing`
 
 | Ảnh | Người / mặt | Điểm | Mã lỗi | Ghi chú | Đã sửa? |
 |---|---|---|---|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
-| | | | | | |
+| `000000381889.jpg` (`crowd`) | Các người trong ảnh | Số skeleton | `missing` | Kiểm người đội mũ đen cầm điện thoại đã có skeleton chưa | Chưa |
+| `000000480582.jpg` (`back`) | Hai người chăn cừu | Các cặp trái/phải | `ok` | Kiểm trái/phải theo hướng từng người | `ok` |
+| `000000123544.jpg` (`back`) | Người #1 theo log | `left_wrist`, `right_wrist` | `ok` | Script cảnh báo cặp cổ tay. Lần từ vai qua khuỷu đến cổ tay | `ok` |
+| `000000123544.jpg` (`back`) | Người #2 theo log | `left_knee`, `right_knee` | `ok` | Script cảnh báo cặp đầu gối. Lần từ hông xuống gối | `ok` |
+| `000000343057.jpg` (`easy`) | Người #1 theo log | Hai gối, hai cổ chân | `ok` | Script cảnh báo cặp gối và cổ chân. Lần theo từng chân từ hông xuống | `ok` |
+| `000000019754.jpg` (`easy`) | Người #1 theo log | `left_wrist`, `right_wrist` | `ok` | Script cảnh báo cặp cổ tay. Kiểm tên điểm theo cánh tay | `ok` |
+| `face_175798.jpg` | Mặt #1 | Mắt, mũi, miệng | `ok` | Kiểm vị trí và cờ của các điểm | `ok` |
+| `face_99874.jpg` | Mặt #1 | Mắt, mũi, miệng | `ok` | Kiểm vị trí và cờ của các điểm | `ok` |
+| `face_504911.jpg` | Mặt #1 | Mắt, mũi, miệng | `ok` | Kiểm vị trí và cờ của các điểm | `ok` |
 
 Tổng hợp số lỗi theo mã:
 
