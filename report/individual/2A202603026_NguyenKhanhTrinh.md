@@ -156,7 +156,10 @@ Nguồn ảnh: COCO val2017 / Wikimedia Commons.
 
 ## 8. Khó khăn và lỗi kỹ thuật
 
-...
+## 8. Khó khăn và lỗi kỹ thuật
+
+- **Khó khăn khi gán nhãn:** Ảnh `000000091637.jpg` mất nhiều thời gian nhất vì em bé quay lưng về phía camera. Tôi phân vân giữa `v = 1` và `v = 0` cho hai mắt và mũi. Vì không có đủ dấu hiệu để ước lượng vị trí ba điểm, tôi chọn `v = 0`.
+- **Kiểm tra kỹ thuật:** Tôi đã xuất được cả hai file ZIP theo định dạng COCO Keypoints 1.0. Script tự kiểm báo ĐẠT với 0 lỗi và 4 cảnh báo về khả năng nhầm trái/phải. Các cảnh báo được ghi ở mục 5.
 
 ## Bonus (nếu làm)
 
@@ -199,4 +202,5 @@ Kết quả `src/check_submission.py` cho `HoVaTen_bonus_persons.zip`:
 
 ## 9. Tài liệu tham khảo và công cụ AI đã dùng
 
-...
+[...](https://viblo.asia/)
+chatgpt.com
