@@ -202,5 +202,5 @@ Kết quả `src/check_submission.py` cho `HoVaTen_bonus_persons.zip`:
 
 ## 9. Tài liệu tham khảo và công cụ AI đã dùng
 
-[...](https://viblo.asia/)
+viblo.asia
 chatgpt.com
