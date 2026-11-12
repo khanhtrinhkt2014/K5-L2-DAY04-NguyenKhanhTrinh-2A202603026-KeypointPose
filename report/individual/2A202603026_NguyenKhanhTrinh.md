@@ -10,24 +10,24 @@ Dữ liệu: 12 ảnh người COCO val2017 (Lin et al., 2014) và 8 ảnh chân
 - MSSV: 2A202603026
 - Email: 26ai.trinhnk@vinuni.edu.vn
 - Link repository: https://github.com/khanhtrinhkt2014/K5-L2-DAY04-NguyenKhanhTrinh-2A202603026-KeypointPose.git
-- Phiên bản CVAT (Help → About):
-- Máy: hệ điều hành ___ · RAM ___ GB · chạy CVAT chế độ đầy đủ / lite
-- Bộ ảnh (`src/exports/assignment.json` do `lab.py setup` tạo): có / không
-- Giờ bắt đầu:
-- Giờ kết thúc:
+- Phiên bản CVAT (Help → About):2.82.1
+- Máy: hệ điều hành Win11 · RAM 64 GB · chạy CVAT chế độ đầy đủ 
+- Bộ ảnh (`src/exports/assignment.json` do `lab.py setup` tạo): có
+- Giờ bắt đầu: 17h
+- Giờ kết thúc:18h30
 
 ## 1. Kiểm tra label (CP0)
 
 | Label | Kiểu | Số điểm | Tên điểm đúng bảng của lab? | Đúng thứ tự? | Số cạnh |
 |---|---|---:|---|---|---:|
-| `person` | | | | | |
-| `face` | | | | | |
+| `person` | Skeleton | 17 | Có | Có | 19 |
+| `face` | Skeleton | 13 | Có | Có | 13 |
 
-Mẫu `person` dựng theo người quay mặt về camera (các điểm `left_*` nằm bên phải khung mẫu)? Có / Không
+Mẫu `person` dựng theo người quay mặt về camera (các điểm `left_*` nằm bên phải khung mẫu)? Có
 
 Cách đổi cờ `occluded` / `outside` cho **một điểm** trên phiên bản CVAT này (một câu):
 
-...
+Rê chuột vào đúng điểm rồi nhấn `Q` để bật/tắt `occluded` hoặc `O` để bật/tắt `outside`.
 
 ## 2. Số lượng đã gán và thời gian (CP1, CP2)
 
