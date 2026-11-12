@@ -144,15 +144,15 @@ Nguồn ảnh: COCO val2017 / Wikimedia Commons.
 
 1. Lỗi bạn mắc nhiều nhất hôm nay, và cách bạn sẽ tránh ở dự án thật:
 
-   ...
+   Khi gán cổ tay, tôi từng đặt điểm lệch vào lòng bàn tay. Lần sau, tôi sẽ phóng to ảnh và xác định chỗ cẳng tay nối với bàn tay trước khi đặt điểm.
 
 2. Một quy tắc bạn đề xuất thêm vào guideline (kèm ảnh ví dụ nếu có):
 
-   ...
+   Tôi đề xuất thêm hai ảnh minh họa cạnh nhau cho trường hợp người quay lưng. Một ảnh cho thấy điểm bị che nhưng vẫn có đủ dấu hiệu để ước lượng vị trí (`v = 1`). Ảnh còn lại cho thấy điểm bị che và không thể xác định vị trí đủ chắc (`v = 0`). Ví dụ, trong ảnh `000000091637.jpg`, tôi chọn `v = 0` cho hai mắt và mũi vì em bé quay lưng và tôi không xác định được vị trí ba điểm đó.
 
 3. Nhãn của bạn đi vào model ở đâu? Chọn một lỗi bạn đã sửa và nói nó sẽ làm model học sai thế nào (heatmap, trọng số trong loss, hay bước lật ảnh):
 
-   ...
+   Nếu giữ nhãn cũ, đỉnh heatmap của cổ tay sẽ nằm ở lòng bàn tay. Khi huấn luyện, model sẽ học dự đoán cổ tay lệch về phía bàn tay.
 
 ## 8. Khó khăn và lỗi kỹ thuật
 
