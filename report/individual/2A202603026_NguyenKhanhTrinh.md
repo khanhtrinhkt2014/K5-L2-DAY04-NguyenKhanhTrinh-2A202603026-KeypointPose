@@ -6,10 +6,10 @@ Dữ liệu: 12 ảnh người COCO val2017 (Lin et al., 2014) và 8 ảnh chân
 
 ## 0. Thông tin học viên
 
-- Họ tên:
-- MSSV:
-- Email:
-- Link repository:
+- Họ tên: Nguyễn Khánh Trình
+- MSSV: 2A202603026
+- Email: 26ai.trinhnk@vinuni.edu.vn
+- Link repository: https://github.com/khanhtrinhkt2014/K5-L2-DAY04-NguyenKhanhTrinh-2A202603026-KeypointPose.git
 - Phiên bản CVAT (Help → About):
 - Máy: hệ điều hành ___ · RAM ___ GB · chạy CVAT chế độ đầy đủ / lite
 - Bộ ảnh (`src/exports/assignment.json` do `lab.py setup` tạo): có / không
