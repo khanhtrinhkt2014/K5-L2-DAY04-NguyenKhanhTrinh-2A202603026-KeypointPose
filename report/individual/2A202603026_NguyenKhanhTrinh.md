@@ -33,18 +33,18 @@ Rê chuột vào đúng điểm rồi nhấn `Q` để bật/tắt `occluded` ho
 
 | Nhóm ảnh | Số ảnh | Số skeleton đã gán | Số người dưới 60 px (không gán) | Số poster / gương / màn hình bỏ qua | Thời gian (phút) |
 |---|---:|---:|---:|---:|---:|
-| `easy` | 5 | 5 | | | |
-| `occluded` | 3 | 3 | | | |
-| `back` | 2 | 2 | | | |
-| `small` | 1 | 1 | | | |
-| `crowd` | 1 | 1 | | | |
-| `faces` | 8 | 8 | — | | |
+| `easy` | 5 | 5 | | | 10 |
+| `occluded` | 3 | 3 | | | 15 |
+| `back` | 3 | 6 | | | 30 |
+| `small` | 1 | 1 | | | 15 |
+| `crowd` | 1 | 2 | | | 10 |
+| `faces` | 8 | 8 | — | | 10 |
 
-- Số ảnh người đã xong ở mốc phút 105: ___ / 10
-- Thời gian thực tế (phút): CP1 ___ · CP2 ___ · CP3 ___
+- Số ảnh người đã xong ở mốc phút 105: 12 / 12
+- Thời gian thực tế (phút): CP1 30 · CP2 30 · CP3 30
 - Ảnh tốn thời gian nhất là ảnh nào, vì sao?
 
-...
+Ảnh 000000091637.jpg (nhóm occluded) tốn nhiều thời gian nhất. Em bé quay lưng về phía camera, nên tôi mất thêm thời gian để xác định trái/phải theo cơ thể em và phân biệt điểm bị che nhưng vẫn ước lượng được vị trí (v = 1) với điểm không thể xác định đủ chắc (v = 0).
 
 ## 3. Bảng ca khó (CP1, CP2)
 
