@@ -82,7 +82,7 @@ Tổng hợp số lỗi theo mã:
 
 Điểm còn phân vân giữa `v = 1` và `v = 0` (ghi cả hai lựa chọn và lý do chọn):
 
-...
+Trong ảnh 000000091637.jpg, tôi phân vân giữa v = 1 và v = 0 cho hai mắt (left_eye, right_eye) và mũi (nose) của em bé. Vì em bé quay lưng về phía camera, tôi không thấy mắt và mũi, cũng không có đủ dấu hiệu để ước lượng chắc vị trí của từng điểm. Tôi chọn v = 0 (outside) cho cả ba điểm.
 
 ## 5. Kiểm file xuất và kết quả tự kiểm (CP4)
 
@@ -90,23 +90,35 @@ Tự kiểm tay trong file JSON:
 
 | File | Người / mặt kiểm (ảnh, thứ tự) | Số phần tử `keypoints` | Điểm `outside` ra `v = 0`, `occluded` ra `v = 1`? | `num_keypoints` khớp? |
 |---|---|---:|---|---|
-| `HoVaTen_persons.zip` | | | | |
-| `HoVaTen_persons.zip` | | | | |
-| `HoVaTen_faces.zip` | | | | |
+| `NguyenKhanhTrinh_persons.zip` | `000000019754.jpg`, người #1 | 51 | 	Không có điểm v = 0. Có 4 điểm v = 1, ví dụ left_ear | Có. 4 điểm v = 1 + 13 điểm v = 2 = 17. JSON ghi 17. |
+| `NguyenKhanhTrinh_persons.zip` | `000000343057.jpg`, người #1 | 51 | left_elbow và left_wrist có v = 0. Có 5 điểm v = 1, ví dụ left_eye. | Có. 5 điểm v = 1 + 10 điểm v = 2 = 15. JSON ghi 15. |
+| `NguyenKhanhTrinh_faces.zip` | `face_175798.jpg`, mặt #1 | 39 | Không có điểm `v = 0`; cả 8 điểm quanh hai mắt ra `v = 1`. | Có. 8 + 5 = 13, khớp `13` trong JSON. |
 
-Sau khi xuất, CVAT ghi `occluded` thành `v = ___` và `outside` thành `v = ___`. Tọa độ của điểm `outside` trong file là `0, 0` hay tọa độ cũ? ___
+Sau khi xuất, CVAT ghi `occluded` thành `v = 1` và `outside` thành `v = 0`. Theo log, 84 điểm `outside` trong file người vẫn giữ tọa độ cũ.
 
-Hai job đã chuyển sang completed trên CVAT? Có / Không
+Hai job đã chuyển sang completed trên CVAT? Có 
 
 Dán phần **TÓM TẮT** in ra từ `src/check_submission.py`:
 
 ```text
-(dán ở đây)
+- File person: NguyenKhanhTrinh_persons.zip
+  Số ảnh: 12 · số skeleton person: 18 · mỗi annotation 51 số
+  Skeleton theo ảnh: 000000019754=1, 000000091637=2, 000000123544=2, 000000150192=1, 000000177338=2, 000000201702=1, 000000343057=1, 000000365099=1, 000000381889=2, 000000393909=2, 000000451084=1, 000000480582=2
+  Cờ v: v=2 197 (64%) · v=1 25 (8%) · v=0 84 (27%)
+  num_keypoints trung bình: 12.3
+- File face: NguyenKhanhTrinh_faces.zip
+  Số ảnh: 8 · số skeleton face: 8 · mỗi annotation 39 số
+  Skeleton theo ảnh: face_145621=1, face_175798=1, face_436791=1, face_469647=1, face_504911=1, face_559185=1, face_575921=1, face_99874=1
+  Cờ v: v=2 96 (92%) · v=1 8 (8%) · v=0 0 (0%)
+  num_keypoints trung bình: 13.0
+- Ghi chú: 84 điểm v = 0 vẫn mang tọa độ cũ.
+- Số [LỖI]: 0 · số [CẢNH BÁO]: 4
+Kết quả: ĐẠT (đọc lại từng cảnh báo ở trên)
 ```
 
 Các `[CẢNH BÁO]` còn giữ nguyên và lý do:
 
-...
+Tôi giữ nguyên nhãn ở cả 4 trường hợp được cảnh báo. Khi kiểm tra, tôi lần theo từng cánh tay từ vai qua khuỷu đến cổ tay và từng chân từ hông qua gối đến cổ chân. Các điểm đều đúng bên trái/phải của người trong ảnh. Tư thế khiến một số cặp điểm có thứ tự trái/phải trên ảnh khác với các cặp còn lại, nên script phát cảnh báo.
 
 ## 6. Ảnh chụp màn hình
 
