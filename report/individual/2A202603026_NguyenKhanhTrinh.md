@@ -51,10 +51,10 @@ Rê chuột vào đúng điểm rồi nhấn `Q` để bật/tắt `occluded` ho
 Mỗi điểm bạn phân vân một dòng, nhất là phân vân giữa `v = 1` và `v = 0`, hoặc không chắc hướng người.
 
 | Ảnh | Người / mặt | Điểm | Cờ đã chọn | Phân vân giữa | Lý do chọn |
-|---|---|---|---:|---|---|
-| | | | | | |
-| | | | | | |
-| | | | | | |
+|---|---|---|---|---|---|
+| `000000091637.jpg` | Em bé quay lưng | `left_eye` | `v = 0` | `v = 0` và `v = 1` | vì không xác định được vị trí |
+| `000000091637.jpg` | Em bé quay lưng | `right_eye` | `v = 0` | `v = 0` và `v = 1` | vì không xác định được vị trí |
+| `000000091637.jpg` | Em bé quay lưng | `nose` | `v = 0` | `v = 0` và `v = 1` | vì không xác định được vị trí |
 
 ## 4. Bảng tự review (CP3)
 
