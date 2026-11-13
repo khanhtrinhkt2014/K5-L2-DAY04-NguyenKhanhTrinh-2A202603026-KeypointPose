@@ -107,11 +107,11 @@ Cách tay (khi cần): trang Task → Actions → Export task dataset.
 
 ## Phần C — Tự kiểm trước khi nộp
 
-- [ ] Mỗi người cao từ 60 px có đúng một skeleton; không gán tượng, poster, gương, màn hình.
-- [ ] Đã nói hướng người trước khi kéo điểm; điểm đỏ (trái) nằm đúng bên.
-- [ ] Không có điểm nào bị kéo về sát mép ảnh: điểm ngoài ảnh đã bật `outside`.
-- [ ] Không dùng `hidden` (phím H).
-- [ ] Mặt nhìn về camera: `left_eye_*` nằm bên phải ảnh.
-- [ ] Script tự kiểm in `Kết quả: ĐẠT`.
+- [x] Mỗi người cao từ 60 px có đúng một skeleton; không gán tượng, poster, gương, màn hình.
+- [x] Đã nói hướng người trước khi kéo điểm; điểm đỏ (trái) nằm đúng bên.
+- [x] Không có điểm nào bị kéo về sát mép ảnh: điểm ngoài ảnh đã bật `outside`.
+- [x] Không dùng `hidden` (phím H).
+- [x] Mặt nhìn về camera: `left_eye_*` nằm bên phải ảnh.
+- [x] Script tự kiểm in `Kết quả: ĐẠT`.
 
 Nguồn ảnh minh họa: [`images/NGUON_ANH.md`](images/NGUON_ANH.md).
