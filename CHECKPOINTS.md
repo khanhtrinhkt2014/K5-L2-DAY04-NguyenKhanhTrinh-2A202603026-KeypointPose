@@ -28,10 +28,10 @@ Quy ước nhãn đầy đủ ở `docs/GUIDELINE.md`. Thao tác CVAT ở `docs/
 - **Sản phẩm:** `src/exports/assignment.json`; báo cáo mục **1. Kiểm tra label** đã điền đủ.
 - **Cần hiểu:** vì sao kiểm label trước khi gán (script và model đọc điểm theo tên; một tên sai làm sai cả task); vì sao mẫu `person` dựng theo người quay mặt về camera.
 - **Tự kiểm tra:**
-  - [ ] Đếm được 17 điểm trong `person` và 13 điểm trong `face`, tên khớp từng chữ với bảng trong `docs/GUIDELINE.md`.
-  - [ ] Thử bật `occluded` cho **một điểm** trên một skeleton nháp: chỉ điểm đó đổi kiểu hiển thị, các điểm còn lại giữ nguyên. Xóa skeleton nháp.
-  - [ ] `python lab.py check` in `CVAT sẵn sàng`.
-  - [ ] Đang ở trang Job (thanh địa chỉ có `/jobs/`), tên task có tên của bạn.
+  - [x] Đếm được 17 điểm trong `person` và 13 điểm trong `face`, tên khớp từng chữ với bảng trong `docs/GUIDELINE.md`.
+  - [x] Thử bật `occluded` cho **một điểm** trên một skeleton nháp: chỉ điểm đó đổi kiểu hiển thị, các điểm còn lại giữ nguyên. Xóa skeleton nháp.
+  - [x] `python lab.py check` in `CVAT sẵn sàng`.
+  - [x] Đang ở trang Job (thanh địa chỉ có `/jobs/`), tên task có tên của bạn.
 
 ---
 
@@ -51,10 +51,10 @@ Quy ước nhãn đầy đủ ở `docs/GUIDELINE.md`. Thao tác CVAT ở `docs/
 - **Sản phẩm:** một skeleton `person` cho mỗi người cao từ 60 px trong 12 ảnh của bạn; báo cáo mục **2. Số lượng và thời gian** (dòng 5 nhóm ảnh người) và mục **3. Bảng ca khó** (mỗi điểm phân vân giữa `v = 1` và `v = 0` một dòng).
 - **Cần hiểu:** trái/phải theo người trong ảnh (người quay mặt về camera: tay trái nằm bên phải ảnh; người nghiêng nhìn sang phải ảnh: bên gần camera là bên phải của họ); vì sao một điểm đoán bừa có `v > 0` hại hơn một điểm `v = 0`.
 - **Tự kiểm tra:**
-  - [ ] Mỗi người cao từ 60 px có đúng một skeleton; không có skeleton trên poster, gương, màn hình.
-  - [ ] Không điểm nào nằm sát mép ảnh "cho có": điểm ngoài ảnh đã là `outside`.
-  - [ ] Đường nối không bắt chéo bất thường.
-  - [ ] **Mốc phút 105:** xong ít nhất 8 ảnh. **Mốc phút 150:** đủ 12 ảnh. Chưa đạt thì báo coach.
+  - [x] Mỗi người cao từ 60 px có đúng một skeleton; không có skeleton trên poster, gương, màn hình.
+  - [x] Không điểm nào nằm sát mép ảnh "cho có": điểm ngoài ảnh đã là `outside`.
+  - [x] Đường nối không bắt chéo bất thường.
+  - [x] **Mốc phút 105:** xong ít nhất 8 ảnh. **Mốc phút 150:** đủ 12 ảnh. Chưa đạt thì báo coach.
 
 ---
 
@@ -71,9 +71,9 @@ Quy ước nhãn đầy đủ ở `docs/GUIDELINE.md`. Thao tác CVAT ở `docs/
 - **Sản phẩm:** 8 skeleton `face` trong job; dòng `faces` trong báo cáo mục **2**; các điểm phân vân vào mục **3**.
 - **Cần hiểu:** vì sao mí mắt cần chính xác từng pixel (tỉ số mở mắt = khoảng cách mí trên–mí dưới ÷ bề ngang mắt; mặt xa camera chỉ rộng vài chục pixel, lệch 2 px có thể biến "mắt mở" thành "mắt lim dim" cho hệ thống giám sát tài xế).
 - **Tự kiểm tra:**
-  - [ ] Ở mặt thẳng đầu tiên, `left_eye_*` nằm bên **phải** ảnh.
-  - [ ] Khóe ngoài (`*_eye_outer`) xa sống mũi hơn khóe trong (`*_eye_inner`).
-  - [ ] Ảnh kính râm: bốn điểm mắt sau tròng kính hiển thị kiểu `occluded`.
+  - [x] Ở mặt thẳng đầu tiên, `left_eye_*` nằm bên **phải** ảnh.
+  - [x] Khóe ngoài (`*_eye_outer`) xa sống mũi hơn khóe trong (`*_eye_inner`).
+  - [x] Ảnh kính râm: bốn điểm mắt sau tròng kính hiển thị kiểu `occluded`.
 
 ---
 
@@ -90,9 +90,9 @@ Quy ước nhãn đầy đủ ở `docs/GUIDELINE.md`. Thao tác CVAT ở `docs/
 - **Sản phẩm:** báo cáo mục **4. Bảng tự review**, ít nhất 8 dòng (5 ảnh người + 3 ảnh mặt, kể cả dòng `ok`).
 - **Cần hiểu:** vì sao `lr_swap` là lỗi nặng nhất (điểm nằm đúng khớp nhưng sai tên làm OKS sụp, và phá bước lật ảnh khi huấn luyện).
 - **Tự kiểm tra:**
-  - [ ] Bảng có ít nhất 8 dòng, mỗi dòng có mã lỗi đúng tên.
-  - [ ] Mọi lỗi đã ghi đều có cột "Đã sửa?" là có, hoặc có lý do vì sao không sửa.
-  - [ ] Điểm phân vân `v = 1` / `v = 0`: đã ghi cả hai lựa chọn và lý do chọn.
+  - [x] Bảng có ít nhất 8 dòng, mỗi dòng có mã lỗi đúng tên.
+  - [x] Mọi lỗi đã ghi đều có cột "Đã sửa?" là có, hoặc có lý do vì sao không sửa.
+  - [x] Điểm phân vân `v = 1` / `v = 0`: đã ghi cả hai lựa chọn và lý do chọn.
 
 ---
 
@@ -117,9 +117,9 @@ Quy ước nhãn đầy đủ ở `docs/GUIDELINE.md`. Thao tác CVAT ở `docs/
 - **Sản phẩm:** 2 file zip và `assignment.json` trong `src/exports/`; báo cáo đủ mục 0–8; 4 ảnh; hai job ở trạng thái completed.
 - **Cần hiểu:** đọc được bộ ba `(x, y, v)` trong mảng `keypoints` (`docs/COCO_KEYPOINTS.md`); vì sao tọa độ của điểm `v = 0` không được dùng (CVAT 2.x vẫn ghi tọa độ cũ, chuẩn COCO ghi `0, 0`); vì sao `num_keypoints = 0` thì người đó bị bỏ khi huấn luyện và khi chấm.
 - **Tự kiểm tra:**
-  - [ ] Script in `Kết quả: ĐẠT` (không có dòng `[LỖI]`).
-  - [ ] Script báo 12 ảnh người, 8 ảnh mặt, mỗi ảnh mặt đúng 1 skeleton.
-  - [ ] Zip không chứa ảnh (script báo lỗi nếu có).
+  - [x] Script in `Kết quả: ĐẠT` (không có dòng `[LỖI]`).
+  - [x] Script báo 12 ảnh người, 8 ảnh mặt, mỗi ảnh mặt đúng 1 skeleton.
+  - [x] Zip không chứa ảnh (script báo lỗi nếu có).
 
 ---
 
