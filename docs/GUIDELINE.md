@@ -151,9 +151,9 @@ Ngưỡng 60 px là quy ước của lab hôm nay, không phải quy định c�
 
 ## 7. Checklist self-QC trước khi Save và trước khi tự review
 
-- [ ] Mỗi người cao từ 60 px có một skeleton; không có skeleton nào trên poster, gương, màn hình.
-- [ ] Đã nói hướng người trước khi đặt điểm; left/right đúng theo người trong ảnh.
-- [ ] Không có điểm nào nằm sát mép ảnh "cho có": điểm ngoài ảnh là `outside`.
-- [ ] Đường nối không bắt chéo bất thường (hai chân, hai tay).
-- [ ] Mắt, mũi, tai, mí mắt đặt khi đã phóng to; hông và gối ở tâm khớp.
-- [ ] Các ca phân vân đã vào bảng ca khó của báo cáo. Đã `Ctrl+S`.
+- [x] Mỗi người cao từ 60 px có một skeleton; không có skeleton nào trên poster, gương, màn hình.
+- [x] Đã nói hướng người trước khi đặt điểm; left/right đúng theo người trong ảnh.
+- [x] Không có điểm nào nằm sát mép ảnh "cho có": điểm ngoài ảnh là `outside`.
+- [x] Đường nối không bắt chéo bất thường (hai chân, hai tay).
+- [x] Mắt, mũi, tai, mí mắt đặt khi đã phóng to; hông và gối ở tâm khớp.
+- [x] Các ca phân vân đã vào bảng ca khó của báo cáo. Đã `Ctrl+S`.
