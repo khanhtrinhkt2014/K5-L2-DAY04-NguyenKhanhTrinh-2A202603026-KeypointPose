@@ -97,12 +97,12 @@ Lệnh chỉ được in ra ảnh minh họa có sẵn trong `docs/images/` và 
 
 ## Checklist
 
-- [ ] Repo đặt đúng tên `K5-L2-DAY04-HoVaTen-MSSV-KeypointPose`.
-- [ ] Có `src/exports/assignment.json`, `src/exports/HoVaTen_persons.zip` và `src/exports/HoVaTen_faces.zip` (chạy `python lab.py export` lần cuối sau khi gán xong).
-- [ ] Script tự kiểm in `Kết quả: ĐẠT`; đã dán phần tóm tắt vào báo cáo mục 5.
-- [ ] Báo cáo đã đổi tên thành `MSSV_HoTen.md` và điền đủ mục 0–8.
-- [ ] Bảng tự review có ít nhất 8 dòng (5 ảnh người, 3 ảnh mặt).
-- [ ] Có 4 ảnh chụp màn hình trong `report/individual/images/` và đã chèn vào báo cáo.
-- [ ] Hai job trên CVAT đã chuyển sang **completed**.
-- [ ] Không commit ảnh gốc, annotation COCO gốc, `.env` hay mật khẩu.
-- [ ] Đã push lên repo GitHub của bạn, mời tài khoản chấm bài nếu repo private, và nộp link repo trên LMS trước 23:59 GMT+7 ngày lab.
+- [x] Repo đặt đúng tên `K5-L2-DAY04-HoVaTen-MSSV-KeypointPose`.
+- [x] Có `src/exports/assignment.json`, `src/exports/HoVaTen_persons.zip` và `src/exports/HoVaTen_faces.zip` (chạy `python lab.py export` lần cuối sau khi gán xong).
+- [x] Script tự kiểm in `Kết quả: ĐẠT`; đã dán phần tóm tắt vào báo cáo mục 5.
+- [x] Báo cáo đã đổi tên thành `MSSV_HoTen.md` và điền đủ mục 0–8.
+- [x] Bảng tự review có ít nhất 8 dòng (5 ảnh người, 3 ảnh mặt).
+- [x] Có 4 ảnh chụp màn hình trong `report/individual/images/` và đã chèn vào báo cáo.
+- [x] Hai job trên CVAT đã chuyển sang **completed**.
+- [x] Không commit ảnh gốc, annotation COCO gốc, `.env` hay mật khẩu.
+- [x] Đã push lên repo GitHub của bạn, mời tài khoản chấm bài nếu repo private, và nộp link repo trên LMS trước 23:59 GMT+7 ngày lab.
